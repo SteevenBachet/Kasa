@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 1240px;
+  width: 90%;
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */
