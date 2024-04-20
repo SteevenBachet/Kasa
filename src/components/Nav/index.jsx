@@ -4,13 +4,13 @@ import logo from '../../assets/LOGO.png';
 
 function Nav() {
   return (
-    <nav>
-      <img src={logo} alt="" />
-      <div className="button-container">
-        <Link className="nav-button" to="/">
+    <nav className="nav">
+      <img className="nav__logo" src={logo} alt="Logo de l'entreprise Kasa" />
+      <div className="nav__button-container">
+        <Link className="nav__button" to="/">
           Accueil
         </Link>
-        <Link className="nav-button" to="/about">
+        <Link className="nav__button" to="/about">
           A Propos
         </Link>
       </div>

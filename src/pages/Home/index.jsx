@@ -1,13 +1,18 @@
-import Nav from "../../components/Nav";
+import Nav from '../../components/Nav';
+import Banner from '../../components/Banner';
+import Gallery from '../../components/Gallery';
+import '../../styles/pages/home/home.css';
 
-function Home() {
-    return (
-      <div>
-        <Nav/>
-        <p className="leTest">C'est le Test pour Home</p>
-      </div>
-    );
-  }
+function Home({houses}) {
+
   
-  export default Home;
-  
+  return (
+    <div className="home">
+      <Nav />
+      <Banner/>
+      <Gallery houses={houses}/>
+    </div>
+  );
+}
+
+export default Home;

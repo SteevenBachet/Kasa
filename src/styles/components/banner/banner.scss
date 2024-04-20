@@ -1,0 +1,22 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  .banner__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    filter: brightness(0.35);
+    object-fit: cover;
+  }
+  .banner__text-overlay {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  } /*# sourceMappingURL=home.css.map */
+}

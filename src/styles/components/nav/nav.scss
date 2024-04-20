@@ -1,3 +1,18 @@
 nav {
-    background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
 }
+
+.nav__button-container {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__button {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=nav.css.map */
