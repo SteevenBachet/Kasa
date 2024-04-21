@@ -1,1 +1,18 @@
-/*# sourceMappingURL=about.css.map */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .nav__button:nth-child(2) {
+  text-decoration: underline;
+}
+.about .banner {
+  background-image: url("../../../assets/BannerAbout.png");
+  background-size: 100%;
+}
+.about .banner .banner__text-overlay {
+  display: none;
+}
+.about .banner::before {
+  background: rgba(0, 0, 0, 0.214);
+}/*# sourceMappingURL=about.css.map */

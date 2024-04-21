@@ -2,14 +2,8 @@
   position: relative;
   width: 100%;
   height: 220px;
-}
-.banner .banner__image {
-  width: 100%;
-  height: 100%;
+  background-position: center;
   border-radius: 25px;
-  filter: brightness(0.35);
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 .banner .banner__text-overlay {
   width: 100%;
@@ -17,7 +11,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   text-align: center;
-} /*# sourceMappingURL=banner.css.map */
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 25px;
+}/*# sourceMappingURL=banner.css.map */

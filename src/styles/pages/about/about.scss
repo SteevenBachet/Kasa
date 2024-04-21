@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .nav__button:nth-child(2) {
+    //Soulignement interactif
+    text-decoration: underline;
+  }
+  .banner {
+    background-image: url('../../../assets/BannerAbout.png');
+    background-size: 100%;
+    .banner__text-overlay {
+      display: none;
+    }
+  }
+  .banner::before {
+    background: rgba(0, 0, 0, 0.214);
+  }
+   
+}
+

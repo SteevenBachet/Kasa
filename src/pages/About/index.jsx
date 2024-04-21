@@ -1,10 +1,14 @@
-import Nav from "../../components/Nav";
+import Nav from '../../components/Nav';
+import Banner from '../../components/Banner';
+import Collapse from '../../components/Collapse';
+import '../../styles/pages/about/about.css';
 
 function About() {
   return (
-    <div>
-        <Nav/>
-      <p>C'est le Test pour About</p>
+    <div className="about">
+      <Nav />
+      <Banner />
+      <Collapse />
     </div>
   );
 }
