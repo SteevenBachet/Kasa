@@ -10,6 +10,7 @@ function Collapse() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  /* <p> collapse txt => si je reçois une liste => <ul> sinon <p>*/
   return (
     <div className="collapse">
       {collapseList.map((collapse, index) => (

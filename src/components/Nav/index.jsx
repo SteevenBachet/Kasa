@@ -3,6 +3,8 @@ import '../../styles/components/nav/nav.css';
 import logo from '../../assets/LOGO.png';
 
 function Nav() {
+  // console.log(window.location) si window.location.pathname = "/about" => class .active condition ligne 12
+
   return (
     <nav className="nav">
       <img className="nav__logo" src={logo} alt="Logo de l'entreprise Kasa" />
