@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import './styles/index/index.css';
 import Footer from './components/Footer';
+import Error from './pages/Error'
 
 const reponse = await fetch("http://localhost:3000/info.json");
 const houses = await reponse.json();
@@ -17,6 +18,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home houses={houses}/>} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>

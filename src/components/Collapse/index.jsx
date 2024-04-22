@@ -21,9 +21,9 @@ function Collapse() {
           >
             <img className="collapse__image" src={WhiteArrow} alt="Flèche" />
           </button>
-          {openIndex === index && (
-            <div className="collapse__window">Contenu de {collapse}</div>
-          )}
+          <div className={`collapse__window ${openIndex === index ? 'active' : ''}`}>
+            Contenu de {collapse}
+          </div>
         </div>
       ))}
     </div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .collapse {
   display: flex;
   flex-direction: column;
@@ -8,19 +9,20 @@
   position: relative;
   background-color: #ff6060;
   width: 70%;
-  height: 55px;
+  min-height: 55px; /* Problème à l'ouverture avec height qui empêchait d'agrandir => min-height */
   border-radius: 5px;
   padding: 0 20px;
 }
-.collapse .collapse__item .collapse__txt {
+.collapse .collapse__txt {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
-.collapse .collapse__item .collapse__button {
+.collapse .collapse__button {
+  height: 30px;
   position: absolute;
-  right: 30px;
-  top: 50%;
+  right: 25px;
+  top: 25px;
   transform: translate(0, -50%);
   border: none;
   background: none;
@@ -29,6 +31,17 @@
   margin: 0;
   cursor: pointer;
 }
-.collapse .collapse__item .collapse__open img {
+.collapse .collapse__button.collapse__open {
+  top: 15px;
   transform: rotate(180deg);
+}
+.collapse .collapse__window {
+  height: 0;
+  background-color: #f2f2f2;
+  transition: height 0.6s ease;
+  overflow: hidden;
+}
+.collapse .collapse__window.active {
+  margin-bottom: 20px;
+  height: 200px;
 }/*# sourceMappingURL=collapse.css.map */
