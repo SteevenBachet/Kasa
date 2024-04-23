@@ -3,49 +3,56 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  
   &__item {
     position: relative;
     background-color: #ff6060;
-    width: 70%;
+    width: 80%;
     min-height: 55px; /* Problème à l'ouverture avec height qui empêchait d'agrandir => min-height */
     /* fermer : max-height 0, ouvert: max height 9999px pour gerer le contenu*/
     border-radius: 5px;
-    padding: 0 20px;
-  }
-  &__txt {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-  }
 
-  &__button {
-    height: 30px;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    transform: translate(0, -50%);
-    border: none;
-    background: none;
-    color: inherit;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-  }
+    .collapse__txt {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 15px;
+    }
 
-  .collapse__button.collapse__open {
-    top: 15px;
-    transform: rotate(180deg);
-  }
+    .collapse__button {
+      height: 58px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      right: 25px;
+      top: 29px;
+      transform: translate(0, -50%);
+      border: none;
+      background: none;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      transition: transform 0.6s ease;
+    }
 
-  &__window {
-    height: 0;
-    background-color: #f2f2f2;
-    transition: height 0.6s ease;
-    overflow: hidden;
-  }
+    .collapse__button.active {
+      transform: translate(0, -50%) rotate(-180deg);
+    }
 
-  &__window.active {
-    margin-bottom: 20px;
-    height: 200px;
+    .collapse__window {
+      max-height: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      transition: max-height 0.6s ease;
+      overflow: hidden;
+      .collapse__window__txt {
+        padding: 0 20px;
+      }
+    }
+
+    .collapse__window.active {
+      max-height: 300px;
+    }
   }
 }
