@@ -18,7 +18,7 @@
 }
 
 .banner::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -26,4 +26,4 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.604);
   border-radius: 25px;
-} /*# sourceMappingURL=banner.css.map */
+}/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,49 @@
+.housing {
+  background-color: rgb(255, 213, 158);
+  &__carrousel {
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+  }
+}
+.housing__bloc-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  &__item {
+    
+  }
+  &__title {
+   
+  }
+  &__txt {
+    background-color: aliceblue;
+  }
+  &__name {
+   
+  }
+}
+
+.housing__bloc-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__star {
+    
+  }
+}
+
+.housing__bloc-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

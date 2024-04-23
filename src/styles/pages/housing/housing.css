@@ -1,0 +1,33 @@
+.housing {
+  background-color: rgb(255, 213, 158);
+}
+.housing__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.housing__bloc-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.housing__bloc-1__txt {
+  background-color: aliceblue;
+}
+.housing__bloc-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.housing__bloc-2__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.housing__bloc-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=housing.css.map */
