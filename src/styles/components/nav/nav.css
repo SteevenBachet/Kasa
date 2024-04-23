@@ -1,19 +1,20 @@
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
 }
-
 .nav__button-container {
   display: flex;
   gap: 30px;
 }
-
 .nav__button {
   font-size: 20px;
   text-decoration: none;
   color: rgb(25, 25, 25);
+}
+.nav__button.active {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=nav.css.map */

@@ -3,9 +3,6 @@
   flex-direction: column;
   gap: 30px;
 }
-.home .nav__button:nth-child(1) {
-  text-decoration: underline;
-}
 .home .banner {
   background-image: url("../../../assets/BannerHome.png");
 }/*# sourceMappingURL=home.css.map */

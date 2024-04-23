@@ -1,4 +1,3 @@
-import Nav from '../../components/Nav';
 import Banner from '../../components/Banner';
 import Gallery from '../../components/Gallery';
 import '../../styles/pages/home/home.css';
@@ -8,7 +7,6 @@ function Home({houses}) {
   
   return (
     <div className="home">
-      <Nav />
       <Banner/>
       <Gallery houses={houses}/>
     </div>
