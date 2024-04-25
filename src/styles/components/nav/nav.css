@@ -8,12 +8,12 @@
   display: flex;
   gap: 30px;
 }
-.nav__button {
+.nav__button-container__button {
   font-size: 20px;
   text-decoration: none;
   color: rgb(25, 25, 25);
 }
-.nav__button.active {
+.nav__button-container__button.active {
   text-decoration: underline;
 }
 

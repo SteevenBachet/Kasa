@@ -13,9 +13,7 @@ const reponse = await fetch('http://localhost:3000/info.json');
 const houses = await reponse.json();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-/* contrôler la detection de l'id pour rediriger sur la page d'error si l'id est foireux !!!*/
-/* pour la page d'herbergement => réutiliser le composant colapse de a propos et l'adapter pour l'affichage des différents types*/
-/* Collapse about utiliser <collapse/> (fiabilité, sécurité ..) en props */
+
 /* Carroussel=> superposer toutes les images en css et une seule doit être visible (opacity 0, opacity 1 si class .active) */
 root.render(
   <React.StrictMode>
@@ -24,7 +22,7 @@ root.render(
         <Nav/>
         <Routes>
           <Route path="/" element={<Home houses={houses} />} />
-          <Route path="/housing" element={<Housing houses={houses} />} />
+          <Route path="/housing/:id" element={<Housing houses={houses} />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>

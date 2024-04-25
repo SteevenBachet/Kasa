@@ -12,4 +12,10 @@
 }
 .about .banner::before {
   background: rgba(0, 0, 0, 0.214);
+}
+.about .collapse {
+  margin: 3px 0;
+}
+.about .collapse__item {
+  width: 80%;
 }/*# sourceMappingURL=about.css.map */

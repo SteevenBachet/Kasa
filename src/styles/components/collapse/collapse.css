@@ -8,18 +8,18 @@
 .collapse__item {
   position: relative;
   background-color: #ff6060;
-  width: 80%;
+  width: 100%;
   min-height: 55px; /* Problème à l'ouverture avec height qui empêchait d'agrandir => min-height */
   /* fermer : max-height 0, ouvert: max height 9999px pour gerer le contenu*/
   border-radius: 5px;
 }
-.collapse__item .collapse__txt {
+.collapse__item__txt {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   margin-left: 15px;
 }
-.collapse__item .collapse__button {
+.collapse__item__button {
   height: 58px;
   position: absolute;
   display: flex;
@@ -35,19 +35,20 @@
   cursor: pointer;
   transition: transform 0.6s ease;
 }
-.collapse__item .collapse__button.active {
+.collapse__item__button.active {
   transform: translate(0, -50%) rotate(-180deg);
 }
-.collapse__item .collapse__window {
+.collapse__item__window {
   max-height: 0;
   width: 100%;
   background-color: #f2f2f2;
   transition: max-height 0.6s ease;
   overflow: hidden;
 }
-.collapse__item .collapse__window .collapse__window__txt {
+.collapse__item__window__txt {
   padding: 0 20px;
+  list-style-type: none;
 }
-.collapse__item .collapse__window.active {
+.collapse__item__window.active {
   max-height: 300px;
 }/*# sourceMappingURL=collapse.css.map */

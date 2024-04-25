@@ -1,49 +1,72 @@
 .housing {
-  background-color: rgb(255, 213, 158);
-  &__carrousel {
-  }
-  &__container {
+  &__information {
     display: flex;
     flex-direction: column;
-    gap:20px;
-    
-  }
-}
-.housing__bloc-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  &__item {
-    
-  }
-  &__title {
-   
-  }
-  &__txt {
-    background-color: aliceblue;
-  }
-  &__name {
-   
-  }
-}
-
-.housing__bloc-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  &__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 20px;
-  }
-  &__star {
-    
-  }
-}
+    margin-top: 20px;
+    &__presentation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-.housing__bloc-3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+      &__bloc-1 {
+        &__txt {
+          color: #ff6060;
+          margin-bottom: 0px;
+        }
+        &__location {
+          font-size: 20px;
+          margin-top: 10px;
+        }
+        &__tags {
+          display: flex;
+          gap: 15px;
+
+          &__tag {
+            background-color: #ff6060;
+            color: rgb(255, 255, 255);
+            padding: 3px 20px;
+            border-radius: 10px;
+          }
+        }
+      }
+      &__bloc-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__host {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+
+          &__name {
+            color: #ff6060;
+            text-align: right;
+            width: 100px;
+            font-size: 20px;
+          }
+          &__picture {
+            border-radius: 50%;
+            width: 80px;
+          }
+          &__star {
+            display: flex;
+            justify-content: right;
+          }
+        }
+      }
+    }
+    &__collapse {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .collapse {
+    width: 46%;
+    &__item {
+      width: 100%;
+    }
+  }
 }
