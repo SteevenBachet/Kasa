@@ -9,9 +9,7 @@
     background-color: #ff6060;
     width: 100%;
     min-height: 55px; /* Problème à l'ouverture avec height qui empêchait d'agrandir => min-height */
-    /* fermer : max-height 0, ouvert: max height 9999px pour gerer le contenu*/
     border-radius: 5px;
-
     &__txt {
       color: #ffffff;
       font-size: 18px;
@@ -54,6 +52,16 @@
 
     &__window.active {
       max-height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .collapse {
+    &__item {
+      &__window {
+        font-size: 12px;
+      }
     }
   }
 }

@@ -17,6 +17,11 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0; /* Toutes les images sont initialement transparentes */
+  transition: opacity 0.5s ease;
+}
+.carrousel__container__pictures__picture.active {
+  opacity: 1;
 }
 .carrousel__container__buttons {
   position: absolute;
@@ -38,4 +43,21 @@
   right: 0;
   margin-right: 20px;
   transform: translateY(-50%) rotate(0deg);
+}
+.carrousel__container__counter {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 500px) {
+  .carrousel__container {
+    height: 280px;
+    border-radius: 10px;
+  }
+  .carrousel__container__buttons__image {
+    width: 25px;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

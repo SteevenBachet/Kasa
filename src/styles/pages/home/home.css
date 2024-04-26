@@ -5,4 +5,11 @@
 }
 .home .banner {
   background-image: url("../../../assets/BannerHome.png");
+}
+
+@media screen and (max-width: 500px) {
+  .home .banner__text-overlay {
+    width: auto;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=home.css.map */

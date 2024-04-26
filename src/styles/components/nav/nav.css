@@ -17,4 +17,16 @@
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=nav.css.map */
+@media screen and (max-width: 500px) {
+  .nav__logo {
+    width: 130px;
+  }
+  .nav__button-container {
+    gap: 15px;
+  }
+  .nav__button-container__button {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */

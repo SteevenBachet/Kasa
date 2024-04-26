@@ -11,7 +11,9 @@ function Nav() {
       <img className="nav__logo" src={logo} alt="Logo de l'entreprise Kasa" />
       <div className="nav__button-container">
         <Link
-          className={`nav__button-container__button ${location.pathname === '/' ? 'active' : ''}`}
+          className={`nav__button-container__button ${
+            location.pathname === '/' ? 'active' : ''
+          }`}
           to="/"
         >
           Accueil

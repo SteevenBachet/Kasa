@@ -6,3 +6,14 @@
     background-image: url('../../../assets/BannerHome.png');
   }
 }
+
+@media screen and (max-width: 500px) {
+  .home {
+    .banner {
+      &__text-overlay {
+        width: auto;
+        padding: 0 10px;
+      }
+    }
+  }
+}

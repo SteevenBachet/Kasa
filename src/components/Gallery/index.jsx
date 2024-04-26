@@ -5,11 +5,16 @@ function Gallery({ houses }) {
   return (
     <div className="gallery">
       {houses.map((house) => (
-        <Link key={house.id} 
+        <Link
+          key={house.id}
           className="gallery__item"
           to={`/housing/${house.id}`}
         >
-          <img className="gallery__item__image" src={house.cover} alt={house.title} />
+          <img
+            className="gallery__item__image"
+            src={house.cover}
+            alt={house.title}
+          />
           <h3 className="gallery__item__text-overlay">{house.title}</h3>
         </Link>
       ))}

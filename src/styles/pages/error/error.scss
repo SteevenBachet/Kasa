@@ -1,12 +1,23 @@
 .error {
-    color: #FF6060;
-    text-align: center;
-    &__title {
-        font-size: 150px;
-        font-family: MontserratBold;
-    }
-    &__txt {
-        font-size: 25px;
-    }
-    
+  color: #ff6060;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  &__title {
+    font-size: 150px;
+    font-family: MontserratBold;
+    margin: 100px 0 0 0;
+    padding: 0;
+  }
+  &__txt {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  &__button {
+    color: black;
+    font-family: MontserratBold;
+    margin-bottom: 100px;
+  }
 }

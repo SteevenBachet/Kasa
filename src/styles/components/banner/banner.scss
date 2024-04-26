@@ -27,3 +27,12 @@
   background: rgba(0, 0, 0, 0.604);
   border-radius: 25px;
 }
+
+@media screen and (max-width: 750px) {
+  .banner {
+    border-radius: 10px;
+  }
+  .banner::before {
+    border-radius: 10px;
+  }
+}

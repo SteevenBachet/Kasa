@@ -18,6 +18,14 @@
       width: 80%;
     }
   }
-  
 }
 
+@media screen and (max-width: 750px) {
+  .about {
+    .collapse {
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}

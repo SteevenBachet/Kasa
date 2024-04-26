@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 25px 10px;
+  padding: 25px 25px;
   gap: 30px;
   border-radius: 25px;
   &__item {
@@ -27,6 +27,16 @@
       padding: 10px;
       box-sizing: border-box;
       font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gallery {
+    border-radius: 10px;
+    padding: 20px;
+    &__item {
+      border-radius: 10px;
     }
   }
 }

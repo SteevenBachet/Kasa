@@ -54,6 +54,7 @@
           &__star {
             display: flex;
             justify-content: right;
+            gap: 15px;
           }
         }
       }
@@ -67,6 +68,79 @@
     width: 46%;
     &__item {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .housing {
+    &__information {
+      &__presentation {
+        gap: 20px;
+        flex-direction: column;
+        &__bloc-1 {
+          width: 100%;
+          &__txt {
+            margin-top: 0;
+            font-size: 26px;
+          }
+          &__location {
+            font-size: 16px;
+          }
+          &__tags {
+            flex-wrap: wrap;
+            &__tag {
+              font-size: 14px;
+            }
+          }
+        }
+        &__bloc-2 {
+          width: 100%;
+          align-items: center;
+          flex-direction: row-reverse;
+          &__host {
+            &__name {
+              width: auto;
+            }
+            &__star {
+              justify-content: left;
+              width: 100%;
+              gap: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .housing {
+    &__information {
+      &__presentation {
+        &__bloc-2 {
+          gap: 10px;
+          &__host {
+            gap: 10px;
+            &__name {
+              font-size: 16px;
+            }
+            &__star {
+              height: 18px;
+            }
+          }
+        }
+      }
+      &__collapse {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    .collapse {
+      width: 100%;
+      &__item {
+        width: 100%;
+      }
     }
   }
 }

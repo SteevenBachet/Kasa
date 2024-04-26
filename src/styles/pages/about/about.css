@@ -18,4 +18,10 @@
 }
 .about .collapse__item {
   width: 80%;
+}
+
+@media screen and (max-width: 750px) {
+  .about .collapse__item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.css.map */

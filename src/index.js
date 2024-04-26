@@ -14,12 +14,11 @@ const houses = await reponse.json();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-/* Carroussel=> superposer toutes les images en css et une seule doit être visible (opacity 0, opacity 1 si class .active) */
 root.render(
   <React.StrictMode>
     <div className="container">
       <Router>
-        <Nav/>
+        <Nav />
         <Routes>
           <Route path="/" element={<Home houses={houses} />} />
           <Route path="/housing/:id" element={<Housing houses={houses} />} />

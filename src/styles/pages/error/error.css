@@ -1,11 +1,23 @@
 .error {
-  color: #FF6060;
+  color: #ff6060;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 .error__title {
   font-size: 150px;
   font-family: MontserratBold;
+  margin: 100px 0 0 0;
+  padding: 0;
 }
 .error__txt {
   font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+.error__button {
+  color: black;
+  font-family: MontserratBold;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=error.css.map */

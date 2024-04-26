@@ -10,7 +10,6 @@
   background-color: #ff6060;
   width: 100%;
   min-height: 55px; /* Problème à l'ouverture avec height qui empêchait d'agrandir => min-height */
-  /* fermer : max-height 0, ouvert: max height 9999px pour gerer le contenu*/
   border-radius: 5px;
 }
 .collapse__item__txt {
@@ -51,4 +50,10 @@
 }
 .collapse__item__window.active {
   max-height: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .collapse__item__window {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=collapse.css.map */

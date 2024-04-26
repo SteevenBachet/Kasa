@@ -4,8 +4,6 @@ import Collapse from '../../components/Collapse';
 import StarScale from '../../components/StarScale';
 import '../../styles/pages/housing/housing.css';
 
-
-
 function Housing({ houses }) {
   /* Récuperer l'id de l'url et trouver la maison qui correspond */
   const { id } = useParams();
@@ -20,9 +18,8 @@ function Housing({ houses }) {
 
   return (
     <div className="housing">
+      <Carrousel selectedHouse={selectedHouse} />
 
-      <Carrousel selectedHouse={selectedHouse}/>
-      
       <div className="housing__information">
         <div className="housing__information__presentation">
           <div className="housing__information__presentation__bloc-1">
