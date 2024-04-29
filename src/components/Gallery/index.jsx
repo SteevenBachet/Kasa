@@ -1,5 +1,6 @@
-import '../../styles/components/gallery/gallery.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../styles/components/gallery/gallery.css';
 
 function Gallery({ houses }) {
   return (
@@ -10,6 +11,8 @@ function Gallery({ houses }) {
           className="gallery__item"
           to={`/housing/${house.id}`}
         >
+          <div className="gallery__item__overlay"></div> 
+          
           <img
             className="gallery__item__image"
             src={house.cover}

@@ -32,26 +32,30 @@ function Carrousel({ selectedHouse }) {
             />
           ))}
         </div>
-        <button
-          className="carrousel__container__buttons button-left"
-          onClick={handleLeftButtonClick}
-        >
-          <img
-            className="carrousel__container__buttons__image"
-            src={WhiteArrow}
-            alt="Flèche de navigation carrousel vers la gauche"
-          />
-        </button>
-        <button
-          className="carrousel__container__buttons button-right"
-          onClick={handleRightButtonClick}
-        >
-          <img
-            className="carrousel__container__buttons__image"
-            src={WhiteArrow}
-            alt="Flèche de navigation carrousel vers la droite"
-          />
-        </button>
+        {selectedHouse.pictures.length > 1 && (
+          <>
+            <button
+              className="carrousel__container__buttons button-left"
+              onClick={handleLeftButtonClick}
+            >
+              <img
+                className="carrousel__container__buttons__image"
+                src={WhiteArrow}
+                alt="Flèche de navigation carrousel vers la gauche"
+              />
+            </button>
+            <button
+              className="carrousel__container__buttons button-right"
+              onClick={handleRightButtonClick}
+            >
+              <img
+                className="carrousel__container__buttons__image"
+                src={WhiteArrow}
+                alt="Flèche de navigation carrousel vers la droite"
+              />
+            </button>
+          </>
+        )}
         <p className="carrousel__container__counter">
           {activeIndex + 1 + '/' + selectedHouse.pictures.length}
         </p>

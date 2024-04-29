@@ -19,12 +19,19 @@
   width: 100%;
   height: 100%;
 }
+.gallery__item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
 .gallery__item__text-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
   box-sizing: border-box;
